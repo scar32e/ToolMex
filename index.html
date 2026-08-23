@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ToolMex — Herramientas Gratis Online | Calculadoras y Conversores</title>
+<meta name="description" content="ToolMex reúne 16 herramientas gratuitas: calculadora, porcentajes, regla de tres, conversor de monedas, generador de QR, contraseñas y mucho más. Sin registro.">
+<meta name="keywords" content="herramientas online gratis, calculadora online, conversor de monedas, generador de qr, generador de contraseñas, calculadora de edad, porcentajes online">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://toolmex.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ToolMex — Herramientas Gratis Online | Calculadoras y Conversores">
+<meta property="og:description" content="ToolMex reúne 16 herramientas gratuitas: calculadora, porcentajes, regla de tres, conversor de monedas, generador de QR, contraseñas y mucho más. Sin registro.">
+<meta property="og:url" content="https://toolmex.example.com/">
+<meta property="og:site_name" content="ToolMex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ToolMex — Herramientas Gratis Online | Calculadoras y Conversores">
+<meta name="twitter:description" content="ToolMex reúne 16 herramientas gratuitas: calculadora, porcentajes, regla de tres, conversor de monedas, generador de QR, contraseñas y mucho más. Sin registro.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-family=%22Georgia%22>TM</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">TM</span>
+        <span>ToolMex<small>Herramientas Gratis</small></span>
+      </a>
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="headerSearch" placeholder="Buscar herramienta... (ej. IVA, QR, edad)" autocomplete="off">
+        <div class="search-results" id="headerSearchResults"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html#herramientas" class="active">Herramientas</a>
+        <a href="index.html#categorias">Categorías</a>
+        <a href="faq.html">FAQ</a>
+        <a href="index.html#acerca">Acerca de</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">✦ 100% Gratis · Sin registro · Sin instalación</span>
+        <h1 class="fade-up">Herramientas <span class="grad-text">premium</span> para tu día a día</h1>
+        <p class="fade-up">Calculadoras, conversores y utilidades rápidas, precisas y elegantes. Todo funciona directamente en tu navegador, sin anuncios invasivos ni descargas.</p>
+        <div class="hero-search fade-up">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="heroSearch" placeholder="¿Qué necesitas calcular hoy?" autocomplete="off">
+          <div class="search-results" id="heroSearchResults"></div>
+        </div>
+        <div class="hero-stats fade-up">
+          <div><strong>16</strong><span>Herramientas</span></div>
+          <div><strong>100%</strong><span>Gratuitas</span></div>
+          <div><strong>0</strong><span>Registros</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="ad-slot">Espacio publicitario — 970x250</div>
+    </div>
+
+    <section class="section" id="categorias">
+      <div class="container">
+        <div class="categories" id="categoryChips"></div>
+        <div id="herramientas"></div>
+        <div class="tools-grid" id="toolsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="acerca">
+      <div class="container">
+        <div class="info-block" style="margin:0 auto;">
+          <h2>Acerca de ToolMex</h2>
+          <p>ToolMex nace con un objetivo simple: reunir las herramientas de cálculo y conversión más usadas del día a día en un solo lugar, con un diseño cuidado y sin fricciones. No necesitas crear una cuenta, no guardamos tus datos y todas las operaciones se calculan directamente en tu dispositivo.</p>
+          <p>Ya sea que necesites calcular el IVA de una compra, convertir kilos a libras, generar una contraseña segura o crear un código QR, ToolMex está diseñado para darte la respuesta en segundos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" style="margin-bottom:12px;display:inline-flex;">
+            <span class="brand-mark">TM</span><span>ToolMex</span>
+          </a>
+          <p>Plataforma gratuita de calculadoras y conversores en español. Rápida, sin registros y sin instalaciones.</p>
+        </div>
+        <div>
+          <h4>Herramientas</h4>
+          <ul>
+            <li><a href="tools/calculadora.html">Calculadora</a></li>
+            <li><a href="tools/porcentajes.html">Porcentajes</a></li>
+            <li><a href="tools/conversor-monedas.html">Monedas</a></li>
+            <li><a href="tools/generador-qr.html">Generador QR</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="index.html#categorias">Matemáticas</a></li>
+            <li><a href="index.html#categorias">Conversores</a></li>
+            <li><a href="index.html#categorias">Fechas</a></li>
+            <li><a href="index.html#categorias">Utilidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="sitemap.xml">Sitemap</a></li>
+            <li><a href="index.html#acerca">Acerca de ToolMex</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ad-slot">Espacio publicitario — 728x90</div>
+      <div class="footer-bottom">
+        <span>© <span class="current-year">2026</span> ToolMex. Todos los derechos reservados.</span>
+        <span>Hecho con ♥ y mucho dorado.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/tools-data.js"></script>
+  <script src="js/main.js"></script>
+  
+</body>
+</html>

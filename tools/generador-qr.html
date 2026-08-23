@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generador de QR Online Gratis — ToolMex</title>
+<meta name="description" content="Generador de códigos QR online gratis. Crea y descarga códigos QR para enlaces, texto, WiFi o números de teléfono al instante.">
+<meta name="keywords" content="generador de qr, crear codigo qr, generador de codigos qr gratis">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://toolmex.example.com/tools/generador-qr.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generador de QR Online Gratis — ToolMex">
+<meta property="og:description" content="Generador de códigos QR online gratis. Crea y descarga códigos QR para enlaces, texto, WiFi o números de teléfono al instante.">
+<meta property="og:url" content="https://toolmex.example.com/tools/generador-qr.html">
+<meta property="og:site_name" content="ToolMex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Generador de QR Online Gratis — ToolMex">
+<meta name="twitter:description" content="Generador de códigos QR online gratis. Crea y descarga códigos QR para enlaces, texto, WiFi o números de teléfono al instante.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-family=%22Georgia%22>TM</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Puedo generar un QR para una red WiFi?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, puedes escribir el contenido en el formato WIFI:T:WPA;S:NombreRed;P:Contraseña;; para que los lectores de QR se conecten automáticamente."}}, {"@type": "Question", "name": "¿El código QR generado caduca?", "acceptedAnswer": {"@type": "Answer", "text": "No, el código QR representa la información directamente y no caduca. Solo deja de funcionar si el contenido codificado (como un enlace) deja de existir."}}]}</script>
+</head>
+<body data-tool="generador-qr">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">TM</span>
+        <span>ToolMex<small>Herramientas Gratis</small></span>
+      </a>
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="headerSearch" placeholder="Buscar herramienta... (ej. IVA, QR, edad)" autocomplete="off">
+        <div class="search-results" id="headerSearchResults"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html#herramientas" class="active">Herramientas</a>
+        <a href="../index.html#categorias">Categorías</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../index.html#acerca">Acerca de</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+  <main data-tool="generador-qr">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a> / <a href="../index.html#herramientas">Utilidades</a> / Generador de QR</div>
+      <div class="tool-header fade-up">
+        <div class="tool-icon">🔳</div>
+        <h1>Generador de QR</h1>
+        <p>Genera códigos QR gratis para textos, enlaces, WiFi o contactos.</p>
+      </div>
+
+      <div class="tool-app fade-up">
+        
+        <div class="field">
+          <label>Contenido del QR (texto, URL, etc.)</label>
+          <textarea id="qrText" rows="3" placeholder="https://ejemplo.com o cualquier texto"></textarea>
+        </div>
+        <div class="field">
+          <label>Tamaño</label>
+          <select id="qrSize">
+            <option value="200">Pequeño (200x200)</option>
+            <option value="300" selected>Mediano (300x300)</option>
+            <option value="500">Grande (500x500)</option>
+          </select>
+        </div>
+        <button class="btn" id="qrGenerate">Generar Código QR</button>
+        <div id="qr-canvas-wrap"></div>
+        <div class="btn-row" id="qrActions" style="display:none;">
+          <a class="btn secondary" id="qrDownload" download="toolmex-qr.png" style="text-align:center;">⬇ Descargar PNG</a>
+        </div>
+        
+      </div>
+
+      <div class="container" style="padding:0;">
+        <div class="ad-slot">Espacio publicitario — 336x280</div>
+      </div>
+
+      <div class="info-block">
+        <h2>¿Cómo generar un código QR gratis?</h2>
+        <p>Escribe el texto, enlace, número de teléfono o cualquier información que quieras codificar, elige el tamaño y presiona "Generar Código QR". Podrás descargar la imagen en formato PNG para usarla donde necesites: tarjetas de presentación, menús, publicidad o presentaciones.</p>
+        <p>Esta herramienta utiliza un servicio público de generación de imágenes QR y no almacena tu información en ningún servidor de ToolMex.</p>
+      </div>
+
+      <div class="info-block">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+        <button class="faq-q">¿Puedo generar un QR para una red WiFi?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>Sí, puedes escribir el contenido en el formato WIFI:T:WPA;S:NombreRed;P:Contraseña;; para que los lectores de QR se conecten automáticamente.</p></div>
+      </div>
+<div class="faq-item">
+        <button class="faq-q">¿El código QR generado caduca?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>No, el código QR representa la información directamente y no caduca. Solo deja de funcionar si el contenido codificado (como un enlace) deja de existir.</p></div>
+      </div>
+      </div>
+
+      <div class="related">
+        <h2>Otras herramientas que te pueden interesar</h2>
+        <div class="related-grid" id="relatedGrid"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" style="margin-bottom:12px;display:inline-flex;">
+            <span class="brand-mark">TM</span><span>ToolMex</span>
+          </a>
+          <p>Plataforma gratuita de calculadoras y conversores en español. Rápida, sin registros y sin instalaciones.</p>
+        </div>
+        <div>
+          <h4>Herramientas</h4>
+          <ul>
+            <li><a href="../tools/calculadora.html">Calculadora</a></li>
+            <li><a href="../tools/porcentajes.html">Porcentajes</a></li>
+            <li><a href="../tools/conversor-monedas.html">Monedas</a></li>
+            <li><a href="../tools/generador-qr.html">Generador QR</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="../index.html#categorias">Matemáticas</a></li>
+            <li><a href="../index.html#categorias">Conversores</a></li>
+            <li><a href="../index.html#categorias">Fechas</a></li>
+            <li><a href="../index.html#categorias">Utilidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="../faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="../sitemap.xml">Sitemap</a></li>
+            <li><a href="../index.html#acerca">Acerca de ToolMex</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ad-slot">Espacio publicitario — 728x90</div>
+      <div class="footer-bottom">
+        <span>© <span class="current-year">2026</span> ToolMex. Todos los derechos reservados.</span>
+        <span>Hecho con ♥ y mucho dorado.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/tools-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+
+(function(){
+  const text = document.getElementById("qrText");
+  if(!text) return;
+  const size = document.getElementById("qrSize");
+  const btn = document.getElementById("qrGenerate");
+  const wrap = document.getElementById("qr-canvas-wrap");
+  const actions = document.getElementById("qrActions");
+  const download = document.getElementById("qrDownload");
+
+  btn.addEventListener("click", ()=>{
+    const val = text.value.trim();
+    if(!val){ wrap.innerHTML = '<p style="color:var(--text-dim);">Escribe un contenido para generar el QR.</p>'; actions.style.display="none"; return; }
+    const s = size.value;
+    const url = `https://api.qrserver.com/v1/create-qr-code/?size=${s}x${s}&data=${encodeURIComponent(val)}`;
+    wrap.innerHTML = `<img src="${url}" alt="Código QR generado" width="${Math.min(s,300)}" height="${Math.min(s,300)}">`;
+    download.href = url;
+    actions.style.display = "flex";
+  });
+
+  text.value = "https://toolmex.com";
+  btn.click();
+})();
+
+</script>
+</body>
+</html>

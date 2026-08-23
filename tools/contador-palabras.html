@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contador de Palabras Online Gratis — ToolMex</title>
+<meta name="description" content="Contador de palabras y caracteres online gratis. Analiza tu texto en tiempo real: palabras, caracteres, oraciones, párrafos y tiempo de lectura.">
+<meta name="keywords" content="contador de palabras, contador de caracteres, contar palabras online">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://toolmex.example.com/tools/contador-palabras.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contador de Palabras Online Gratis — ToolMex">
+<meta property="og:description" content="Contador de palabras y caracteres online gratis. Analiza tu texto en tiempo real: palabras, caracteres, oraciones, párrafos y tiempo de lectura.">
+<meta property="og:url" content="https://toolmex.example.com/tools/contador-palabras.html">
+<meta property="og:site_name" content="ToolMex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contador de Palabras Online Gratis — ToolMex">
+<meta name="twitter:description" content="Contador de palabras y caracteres online gratis. Analiza tu texto en tiempo real: palabras, caracteres, oraciones, párrafos y tiempo de lectura.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-family=%22Georgia%22>TM</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cómo se calcula el tiempo de lectura?", "acceptedAnswer": {"@type": "Answer", "text": "Se estima con base en un promedio de lectura de 200 palabras por minuto."}}, {"@type": "Question", "name": "¿El texto que escribo se guarda en algún servidor?", "acceptedAnswer": {"@type": "Answer", "text": "No, todo el análisis ocurre localmente en tu navegador."}}]}</script>
+</head>
+<body data-tool="contador-palabras">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">TM</span>
+        <span>ToolMex<small>Herramientas Gratis</small></span>
+      </a>
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="headerSearch" placeholder="Buscar herramienta... (ej. IVA, QR, edad)" autocomplete="off">
+        <div class="search-results" id="headerSearchResults"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html#herramientas" class="active">Herramientas</a>
+        <a href="../index.html#categorias">Categorías</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../index.html#acerca">Acerca de</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+  <main data-tool="contador-palabras">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a> / <a href="../index.html#herramientas">Texto</a> / Contador de Palabras</div>
+      <div class="tool-header fade-up">
+        <div class="tool-icon">📝</div>
+        <h1>Contador de Palabras</h1>
+        <p>Cuenta palabras, caracteres, oraciones y párrafos de cualquier texto.</p>
+      </div>
+
+      <div class="tool-app fade-up">
+        
+        <div class="field">
+          <label>Pega o escribe tu texto</label>
+          <textarea id="wcText" placeholder="Escribe o pega tu texto aquí..." rows="8"></textarea>
+        </div>
+        <div class="row3">
+          <div class="result-box active" style="display:block;"><div class="label">Palabras</div><div class="big" id="wcWords" style="font-size:1.5rem;">0</div></div>
+          <div class="result-box active" style="display:block;"><div class="label">Caracteres</div><div class="big" id="wcChars" style="font-size:1.5rem;">0</div></div>
+          <div class="result-box active" style="display:block;"><div class="label">Oraciones</div><div class="big" id="wcSentences" style="font-size:1.5rem;">0</div></div>
+        </div>
+        <div class="row2" style="margin-top:14px;">
+          <div class="result-box active" style="display:block;"><div class="label">Párrafos</div><div class="big" id="wcParas" style="font-size:1.5rem;">0</div></div>
+          <div class="result-box active" style="display:block;"><div class="label">Tiempo de lectura</div><div class="big" id="wcTime" style="font-size:1.5rem;">0 min</div></div>
+        </div>
+        
+      </div>
+
+      <div class="container" style="padding:0;">
+        <div class="ad-slot">Espacio publicitario — 336x280</div>
+      </div>
+
+      <div class="info-block">
+        <h2>¿Para qué sirve un contador de palabras?</h2>
+        <p>Es ideal para escritores, estudiantes y redactores que necesitan cumplir con un límite de palabras o caracteres en ensayos, publicaciones, metadescripciones SEO o publicaciones en redes sociales. El conteo se actualiza en tiempo real mientras escribes.</p>
+      </div>
+
+      <div class="info-block">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+        <button class="faq-q">¿Cómo se calcula el tiempo de lectura?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>Se estima con base en un promedio de lectura de 200 palabras por minuto.</p></div>
+      </div>
+<div class="faq-item">
+        <button class="faq-q">¿El texto que escribo se guarda en algún servidor?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>No, todo el análisis ocurre localmente en tu navegador.</p></div>
+      </div>
+      </div>
+
+      <div class="related">
+        <h2>Otras herramientas que te pueden interesar</h2>
+        <div class="related-grid" id="relatedGrid"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" style="margin-bottom:12px;display:inline-flex;">
+            <span class="brand-mark">TM</span><span>ToolMex</span>
+          </a>
+          <p>Plataforma gratuita de calculadoras y conversores en español. Rápida, sin registros y sin instalaciones.</p>
+        </div>
+        <div>
+          <h4>Herramientas</h4>
+          <ul>
+            <li><a href="../tools/calculadora.html">Calculadora</a></li>
+            <li><a href="../tools/porcentajes.html">Porcentajes</a></li>
+            <li><a href="../tools/conversor-monedas.html">Monedas</a></li>
+            <li><a href="../tools/generador-qr.html">Generador QR</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="../index.html#categorias">Matemáticas</a></li>
+            <li><a href="../index.html#categorias">Conversores</a></li>
+            <li><a href="../index.html#categorias">Fechas</a></li>
+            <li><a href="../index.html#categorias">Utilidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="../faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="../sitemap.xml">Sitemap</a></li>
+            <li><a href="../index.html#acerca">Acerca de ToolMex</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ad-slot">Espacio publicitario — 728x90</div>
+      <div class="footer-bottom">
+        <span>© <span class="current-year">2026</span> ToolMex. Todos los derechos reservados.</span>
+        <span>Hecho con ♥ y mucho dorado.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/tools-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+
+(function(){
+  const text = document.getElementById("wcText");
+  if(!text) return;
+  const words = document.getElementById("wcWords"), chars = document.getElementById("wcChars"),
+        sentences = document.getElementById("wcSentences"), paras = document.getElementById("wcParas"), time = document.getElementById("wcTime");
+
+  function analyze(){
+    const v = text.value;
+    const wordMatches = v.trim().length ? v.trim().split(/\s+/) : [];
+    const sentenceMatches = v.split(/[.!?]+/).filter(s=>s.trim().length>0);
+    const paraMatches = v.split(/\n+/).filter(p=>p.trim().length>0);
+    words.textContent = wordMatches.length;
+    chars.textContent = v.length;
+    sentences.textContent = sentenceMatches.length;
+    paras.textContent = paraMatches.length;
+    time.textContent = Math.max(1, Math.ceil(wordMatches.length / 200)) + " min";
+  }
+  text.addEventListener("input", analyze);
+  analyze();
+})();
+
+</script>
+</body>
+</html>

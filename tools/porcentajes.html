@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Porcentajes Online Gratis — ToolMex</title>
+<meta name="description" content="Calculadora de porcentajes online gratis. Calcula el % de un número, qué porcentaje representa un valor y la variación porcentual entre dos cifras.">
+<meta name="keywords" content="calculadora de porcentajes, calcular porcentaje online, porcentaje de un numero">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://toolmex.example.com/tools/porcentajes.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calculadora de Porcentajes Online Gratis — ToolMex">
+<meta property="og:description" content="Calculadora de porcentajes online gratis. Calcula el % de un número, qué porcentaje representa un valor y la variación porcentual entre dos cifras.">
+<meta property="og:url" content="https://toolmex.example.com/tools/porcentajes.html">
+<meta property="og:site_name" content="ToolMex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Calculadora de Porcentajes Online Gratis — ToolMex">
+<meta name="twitter:description" content="Calculadora de porcentajes online gratis. Calcula el % de un número, qué porcentaje representa un valor y la variación porcentual entre dos cifras.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-family=%22Georgia%22>TM</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cómo calculo el 15% de propina?", "acceptedAnswer": {"@type": "Answer", "text": "Selecciona '¿Cuánto es el X% de un número?', escribe 15 en porcentaje y el total de la cuenta en el segundo campo."}}, {"@type": "Question", "name": "¿Puedo calcular porcentajes negativos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, en la opción de variación porcentual el resultado puede ser negativo si el valor disminuyó."}}]}</script>
+</head>
+<body data-tool="porcentajes">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">
+        <span class="brand-mark">TM</span>
+        <span>ToolMex<small>Herramientas Gratis</small></span>
+      </a>
+      <div class="nav-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="headerSearch" placeholder="Buscar herramienta... (ej. IVA, QR, edad)" autocomplete="off">
+        <div class="search-results" id="headerSearchResults"></div>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html#herramientas" class="active">Herramientas</a>
+        <a href="../index.html#categorias">Categorías</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../index.html#acerca">Acerca de</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+  <main data-tool="porcentajes">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Inicio</a> / <a href="../index.html#herramientas">Matemáticas</a> / Calculadora de Porcentajes</div>
+      <div class="tool-header fade-up">
+        <div class="tool-icon">%</div>
+        <h1>Calculadora de Porcentajes</h1>
+        <p>Calcula porcentajes de un número, variaciones porcentuales e incrementos.</p>
+      </div>
+
+      <div class="tool-app fade-up">
+        
+        <div class="field">
+          <label>¿Qué deseas calcular?</label>
+          <select id="pctMode">
+            <option value="a">¿Cuánto es el X% de un número?</option>
+            <option value="b">¿Qué % es un número de otro?</option>
+            <option value="c">Variación porcentual entre dos valores</option>
+          </select>
+        </div>
+        <div class="row2">
+          <div class="field"><label id="pctLabel1">Porcentaje (%)</label><input type="number" id="pctVal1" placeholder="Ej. 20"></div>
+          <div class="field"><label id="pctLabel2">Número</label><input type="number" id="pctVal2" placeholder="Ej. 150"></div>
+        </div>
+        <button class="btn" id="pctBtn">Calcular</button>
+        <div class="result-box" id="pctResult">
+          <div class="label">Resultado</div>
+          <div class="big" id="pctBig">—</div>
+          <div class="sub" id="pctSub"></div>
+        </div>
+        
+      </div>
+
+      <div class="container" style="padding:0;">
+        <div class="ad-slot">Espacio publicitario — 336x280</div>
+      </div>
+
+      <div class="info-block">
+        <h2>¿Cómo calcular porcentajes?</h2>
+        <p>Esta herramienta cubre los tres cálculos de porcentaje más comunes: obtener el X% de una cantidad, saber qué porcentaje representa un número respecto a otro, y calcular la variación porcentual (incremento o disminución) entre dos valores.</p>
+        <p>Por ejemplo, si un producto costaba $100 y ahora cuesta $120, la variación porcentual te dirá que aumentó un 20%.</p>
+      </div>
+
+      <div class="info-block">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-item">
+        <button class="faq-q">¿Cómo calculo el 15% de propina?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>Selecciona '¿Cuánto es el X% de un número?', escribe 15 en porcentaje y el total de la cuenta en el segundo campo.</p></div>
+      </div>
+<div class="faq-item">
+        <button class="faq-q">¿Puedo calcular porcentajes negativos?<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="faq-a"><p>Sí, en la opción de variación porcentual el resultado puede ser negativo si el valor disminuyó.</p></div>
+      </div>
+      </div>
+
+      <div class="related">
+        <h2>Otras herramientas que te pueden interesar</h2>
+        <div class="related-grid" id="relatedGrid"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand" style="margin-bottom:12px;display:inline-flex;">
+            <span class="brand-mark">TM</span><span>ToolMex</span>
+          </a>
+          <p>Plataforma gratuita de calculadoras y conversores en español. Rápida, sin registros y sin instalaciones.</p>
+        </div>
+        <div>
+          <h4>Herramientas</h4>
+          <ul>
+            <li><a href="../tools/calculadora.html">Calculadora</a></li>
+            <li><a href="../tools/porcentajes.html">Porcentajes</a></li>
+            <li><a href="../tools/conversor-monedas.html">Monedas</a></li>
+            <li><a href="../tools/generador-qr.html">Generador QR</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categorías</h4>
+          <ul>
+            <li><a href="../index.html#categorias">Matemáticas</a></li>
+            <li><a href="../index.html#categorias">Conversores</a></li>
+            <li><a href="../index.html#categorias">Fechas</a></li>
+            <li><a href="../index.html#categorias">Utilidades</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Sitio</h4>
+          <ul>
+            <li><a href="../faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="../sitemap.xml">Sitemap</a></li>
+            <li><a href="../index.html#acerca">Acerca de ToolMex</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ad-slot">Espacio publicitario — 728x90</div>
+      <div class="footer-bottom">
+        <span>© <span class="current-year">2026</span> ToolMex. Todos los derechos reservados.</span>
+        <span>Hecho con ♥ y mucho dorado.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/tools-data.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+
+(function(){
+  const mode = document.getElementById("pctMode");
+  const l1 = document.getElementById("pctLabel1"), l2 = document.getElementById("pctLabel2");
+  const v1 = document.getElementById("pctVal1"), v2 = document.getElementById("pctVal2");
+  const btn = document.getElementById("pctBtn");
+  const box = document.getElementById("pctResult"), big = document.getElementById("pctBig"), sub = document.getElementById("pctSub");
+  if(!btn) return;
+
+  function updateLabels(){
+    if(mode.value==="a"){ l1.textContent="Porcentaje (%)"; l2.textContent="Del número"; v1.placeholder="Ej. 20"; v2.placeholder="Ej. 150"; }
+    else if(mode.value==="b"){ l1.textContent="Valor"; l2.textContent="Es del total"; v1.placeholder="Ej. 30"; v2.placeholder="Ej. 150"; }
+    else { l1.textContent="Valor inicial"; l2.textContent="Valor final"; v1.placeholder="Ej. 100"; v2.placeholder="Ej. 120"; }
+  }
+  mode.addEventListener("change", updateLabels);
+  updateLabels();
+
+  btn.addEventListener("click", ()=>{
+    const a = parseFloat(v1.value), b = parseFloat(v2.value);
+    if(isNaN(a) || isNaN(b)){ box.classList.remove("active"); return; }
+    let result, subtext;
+    if(mode.value==="a"){
+      result = (a/100) * b;
+      subtext = `El ${a}% de ${b} es:`;
+    } else if(mode.value==="b"){
+      result = (a/b) * 100;
+      subtext = `${a} es el siguiente porcentaje de ${b}:`;
+    } else {
+      result = ((b-a)/Math.abs(a)) * 100;
+      subtext = result >= 0 ? "Incremento porcentual:" : "Disminución porcentual:";
+    }
+    big.textContent = (mode.value==="a" ? result.toLocaleString('es-MX',{maximumFractionDigits:4}) : result.toLocaleString('es-MX',{maximumFractionDigits:2}) + "%");
+    sub.textContent = subtext;
+    box.classList.add("active");
+  });
+})();
+
+</script>
+</body>
+</html>
