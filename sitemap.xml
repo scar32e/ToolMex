@@ -1,57 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/faq.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/calculadora.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/porcentajes.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/regla-de-tres.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/promedio-escolar.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/descuentos-iva.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/conversor-kg-lb.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/conversor-temperatura.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/conversor-metros-pies.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/conversor-monedas.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/contador-palabras.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/generador-contrasenas.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/calculadora-edad.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/dias-entre-fechas.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/generador-qr.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/cronometro.html</loc>
-  </url>
-  <url>
-    <loc>https://scar32e.github.io/ToolMex/tools/temporizador.html</loc>
-  </url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/faq.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/calculadora.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/porcentajes.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/regla-de-tres.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/promedio-escolar.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/descuentos-iva.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/conversor-kg-lb.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/conversor-temperatura.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/conversor-metros-pies.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/conversor-monedas.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/contador-palabras.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/generador-contrasenas.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/calculadora-edad.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/dias-entre-fechas.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/generador-qr.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/cronometro.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://scar32e.github.io/ToolMex/tools/temporizador.html</loc>
+<lastmod>2026-08-23</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
 </urlset>
