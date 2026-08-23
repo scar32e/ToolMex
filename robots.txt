@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolmex.example.com/sitemap.xml
+Sitemap: https://scar32e.github.io/ToolMex/sitemap.xml
